@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".notes">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:id="@+id/greeting"
+            android:layout_width="377dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:text="Hello, " />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="57dp"
+            android:layout_height="32dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logoutwhite" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        >
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:id="@+id/editButton"
+            android:background="@drawable/edit"
+            android:layout_gravity="center"
+            android:layout_width="54dp"
+            android:layout_height="60dp"
+            style="?android:attr/borderlessButtonStyle"
+           />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="54dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/save"
+            android:paddingBottom="5dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="50dp"
+            />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:background="@drawable/textview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:textColor="@color/textDark"
+        android:textColorHint="@color/textGray"
+        android:inputType="textPersonName"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/noteBody"
+        android:layout_width="match_parent"
+        android:layout_height="506dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textview"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:hint="Enter your note here..."
+
+        android:padding="10dp"
+        android:textColor="@color/textDark"
+        android:textColorHint="@color/textGray" />
+
+</FrameLayout>
